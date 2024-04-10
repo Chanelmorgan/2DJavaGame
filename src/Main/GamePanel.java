@@ -55,5 +55,15 @@ public class GamePanel extends JPanel implements Runnable{
     public void paintComponent(Graphics g){
         super.paintComponent(g);
 
+        Graphics2D g2 = (Graphics2D)g;
+        g2.setColor(Color.WHITE);
+        // Player for now.
+        g2.fillRect(100, 100, tileSize, tileSize);
+        g2.dispose(); // saves memory
+
+
+
+
+
     }
 }
